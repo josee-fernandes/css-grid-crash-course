@@ -14,39 +14,14 @@ body{
    overflow-x: hidden;
 }
 
-.box1{
-   background-color: lightcoral;
-}
-
-.box2{
-   background-color: lightblue;
-}
-
-.box3{
-   background-color: lightgreen;
-}
-
-main{
-   height: 100vh;
+.gallery{
    display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   grid-template-areas:
-      'box1 box2'
-      'box3 box3';
-}
-
-.box1{
-   grid-area: box1;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
-
-.box2{
-   grid-area: box2;
-}
-
-.box3{
-   grid-area: box3;
+   // grid-template-columns: repeat(auto-fill, 400px);
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+   
+   img{
+      width: 100%;
+   }
 }
