@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Baloo Da 2', Archivo, sans-serif;
+}
+
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.box1 {
+  background-color: lightcoral;
+}
+
+.box2 {
+  background-color: lightblue;
+}
+
+.box3 {
+  background-color: lightgreen;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=style.css.map */
